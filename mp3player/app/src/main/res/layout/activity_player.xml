@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FD8E09"
+    tools:context="com.example.android.mp3player.Player">
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_above="@+id/avanza_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/avanza_button"
+        style="@style/customAvanza"
+        android:text="avanzar"
+        android:layout_toRightOf="@+id/play_button"
+        android:layout_toEndOf="@+id/play_button"/>
+
+    <Button
+        android:text="play"
+        android:id="@+id/play_button"
+        style="@style/customPlay"/>
+
+    <Button
+        android:id="@+id/retrocede_button"
+        android:text="retro"
+        style="@style/customRetrocede"
+        android:layout_toLeftOf="@+id/play_button"
+        android:layout_toStartOf="@+id/play_button" />
+
+</RelativeLayout>
